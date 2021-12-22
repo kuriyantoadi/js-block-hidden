@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JS Block Hidden</title>
+</head>
+
+<body>
+  <h3>JS Block Hidden</h3>
+  <input type="button" class="btn btn-success" value="kondisi1" onclick="js_block1()">
+
+  <div id="block1" style="display:none;">
+    test Blok 1
+  </div>
+  <br><br>
+  <input type="button" class="btn btn-success" value="kondisi2" onclick="js_block2()">
+  <div id="block2" style="display:none;">
+    test Blok 2
+  </div>
+
+</body>
+
+<script>
+  function js_block1() {
+    var x = document.getElementById("block1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function js_block2() {
+    var x = document.getElementById("block2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+</html>
